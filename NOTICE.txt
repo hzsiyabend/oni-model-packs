@@ -1,0 +1,13 @@
+ONI Advanced Voice optional package
+
+VoxCPM2 model by OpenBMB / ModelBest, Apache License 2.0.
+Source revision: 32279effe8c19989596f05d353d1447f51d9e915.
+Model source: https://huggingface.co/openbmb/VoxCPM2
+
+ONI modifications: F16 GGUF conversion with the previously approved F32 VAE/stop tensors; fixed voice descriptions and random seeds; 10 CFM steps, CFG2 and temperature1 unchanged; authenticated distribution encryption; playback-only 1.3x tempo. No new integer quantization.
+
+Native runtime: llama.cpp-omni, MIT License; ggml authors copyright retained.
+Native revision: 873056743b74e1a4ce5dcf7290e2298428e214db.
+ONI native modifications: bounded context and F32 KV, exact-token input, F32 depthwise audio kernels, platform bridge, cancellation and isolated exports.
+
+The encrypted asset format protects the ONI distribution path and does not replace or remove upstream license rights. Upstream original weights remain available from the model source. No ONI application source or account secrets are included.
